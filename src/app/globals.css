@@ -1,33 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+a {
+  margin-left: 1rem;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+
+  font-size: 1.3rem;
+  height: 3rem;
+  background-color: darkcyan;
+  & ul {
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: inherit;
+  }
+  & li {
+    margin-right: 1rem;
+    list-style: none;
+  }
+  & a {
+    color: aliceblue;
   }
 }
+.circularSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: darkcyan;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.cardCircular {
+  min-width: 60%;
+  color: aliceblue;
+  background-color: rgb(0, 67, 67);
+  & h1 {
+    display: flex;
+    justify-content: center;
   }
 }

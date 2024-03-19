@@ -1,0 +1,39 @@
+.loginSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formLogin {
+  margin-top: 17vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: darkcyan;
+  border-radius: 2rem;
+  width: 30%;
+  & h2 {
+    color: aliceblue;
+    font-size: 2rem;
+  }
+  & input {
+    margin-bottom: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border-color: cornflowerblue;
+    border-width: 1px;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  & button {
+    margin-bottom: 1rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border-color: cornflowerblue;
+    border-width: 2px;
+    color: darkslategray;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
